@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lint": "standardx . -v"
+  },
+  "eslintConfig": {
+    "rules": {
+      "camelcase": 0,
+      "no-var": 0,
+      "no-multiple-empty-lines": 0,
+      "no-multi-spaces": 0
+    }
+  },
+  "devDependencies": {
+    "@signalprocessing/transforms": "^2.0.6",
+    "argparse": "^2.0.1",
+    "standardx": "^7.0.0"
+  }
+}
