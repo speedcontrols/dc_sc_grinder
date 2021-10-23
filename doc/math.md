@@ -44,7 +44,7 @@ Current at high speed:
 
 Current at low speed:
 
-<img src="./images/high_16khz.png" width="50%">
+<img src="./images/low_16khz.png" width="50%">
 
 Spectre at high speed:
 

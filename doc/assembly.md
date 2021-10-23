@@ -30,7 +30,8 @@ very similar, but need different PCB inside
 
 PCB:
 
-- [board](https://oshwlab.com/speed/dc-speed-control)
+- [board](https://oshwlab.com/speed/dc-speed-control). SMT stencil 70\*50mm,
+  bottom layer.
 
 
 
