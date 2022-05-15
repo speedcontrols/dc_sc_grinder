@@ -3,6 +3,7 @@ Device assembly <!-- omit in toc -->
 
 - [Supported grinders & PCBs](#supported-grinders--pcbs)
   - [Newacalox (red)](#newacalox-red)
+  - [Lanxstar](#lanxstar)
 - [Required components](#required-components)
 - [Extract some parts from original board](#extract-some-parts-from-original-board)
 - [Solder PCB top and bottom](#solder-pcb-top-and-bottom)
@@ -21,18 +22,26 @@ If you wish to customize this project, or join development, see
 
 ### Newacalox (red)
 
-- [link](https://www.aliexpress.com/item/32847620840.html)
+- [Buy](https://www.aliexpress.com/item/32847620840.html).
+- [Board](https://oshwlab.com/speed/dc-speed-control). SMT stencil 70\*50mm,
+  bottom layer.
 
 <img src="./images/grinder_newacalox.jpg" width="25%">
 
 Warning! Don't buy aqua grinders with horizontal switch placement. Those are
 very similar, but need different PCB inside
 
-PCB:
+### Lanxstar
 
-- [board](https://oshwlab.com/speed/dc-speed-control). SMT stencil 70\*50mm,
-  bottom layer.
+- [Buy](https://www.aliexpress.com/item/1005002824563267.html).
+- [Board](https://oshwlab.com/speed/low-dc-speed-control). SMT stencil 55\*45mm,
+  top layer.
 
+<img src="./images/grinder_lanxstar.jpg" width="25%">
+
+Note, this grinder is weak. Mostly used to demonstrate regulator flexibility -
+hardware can be reworked for wide voltage range, and supports major kinds of
+brushed motors.
 
 
 ## Required components
@@ -71,14 +80,15 @@ You need:
 We recommend to install all components, except regulating knob. Because on
 flux cleanup phase, some solvents can wash off speed marks.
 
-PCB bottom:
+PCB components side:
 
-TBD
+<img src="./images/pcb_newacalox_bottom.jpg" width="30%" alt="Newacalox PCB bottom">
+<img src="./images/pcb_lanxstar_top.jpg" width="30%" alt="Lanxstar PCB top">
 
 
-PCB top (Newacalox & BDCAT):
+PCB another side (if needed):
 
-TBD
+<img src="./images/pcb_newacalox_top.jpg" width="30%" alt="Newacalox PCB top">
 
 
 ## Cleanup PCB
@@ -94,11 +104,13 @@ Don't forget to remove flux again.
 
 PCB with speed knob:
 
-TBD
+<img src="./images/pcb_newacalox_full.jpg" width="30%" alt="Newacalox PCB with all components">
+<img src="./images/pcb_lanxstar_full.jpg" width="30%" alt="Lanxstar PCB with all components">
 
 PCB in drill body:
 
-TBD
+<img src="./images/pcb_newacalox_in_case.jpg" width="30%" alt="PCB in case (Newacalox)">
+<img src="./images/pcb_lanxstar_in_case.jpg" width="30%" alt="PCB in case (Lanxstar)">
 
 
 ## Upload firmware and test
@@ -119,7 +131,7 @@ while AC plug in power socket, your USB interface may be damaged!
 6. In VS Code, click PlatformIO tab, expand `env:...` item with matching
    MCU/programmer and click `Upload` (see image blow). Then wait until complete.
 
-TBD (image)
+<img src="./images/pio_upload.png" width="60%" alt="VSCode upload firmware">
 
 Now you can assemble drill, run self-calibration and try how your "new drill"
 works.
