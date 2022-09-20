@@ -125,7 +125,8 @@ while AC plug in power socket, your USB interface may be damaged!
    with everything. That should install PlatformIO and all required dependencies.
 4. Make sure you installed & configured ST-link/V2 drivers:
    - [Linux](http://docs.platformio.org/en/latest/installation.html#troubleshooting)
-     instructions (how to configure `udev` rules).
+     instructions (how to configure `udev` rules). Or, for Ubuntu, install
+     `stlink-tools` package: `sudo apt-get install stlink-tools`.
    - [Windows](https://www.st.com/en/development-tools/stsw-link009.html) drivers.
 5. Attach ST-link/V2 programmer (depends on your board).
 6. In VS Code, click PlatformIO tab, expand `env:...` item with matching
