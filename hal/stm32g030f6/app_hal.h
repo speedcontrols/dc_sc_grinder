@@ -5,7 +5,7 @@
 #include "libfixmath/fix16.h"
 #include "stm32g0xx_hal.h"
 
-#define SAMPLING_RATE 16384
+#define SAMPLING_RATE 17442
 
 // Oversampling ratio. Used to define buffer sizes
 #define ADC_FETCH_PER_TICK 1

@@ -77,8 +77,8 @@ void setup(void)
     SystemClock_Config();
 
     MX_GPIO_Init();
-    MX_ADC1_Init();
     MX_DMA_Init();
+    MX_ADC1_Init();
     MX_TIM1_Init();
     MX_TIM14_Init();
 
@@ -97,6 +97,8 @@ void setup(void)
     );
 
     HAL_ADCEx_Calibration_Start(&hadc1);
+
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
     HAL_ADC_Start_DMA(
         &hadc1,
